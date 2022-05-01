@@ -1,12 +1,24 @@
 import type { NextPage } from 'next'
+import { useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 const Home: NextPage = () => {
+  const router = useRouter()
+  // router.push('browse')
+  const redirectToBrowsePage = () => {
+    router.push('/browse')
+  }
+  useEffect(() => {
+    router.push('/browse')
+  }, [])
+  // redirectToBrowsePage()
+
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>Home - Netflix</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
