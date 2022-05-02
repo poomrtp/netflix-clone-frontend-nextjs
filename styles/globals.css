@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#141414];
+  }
+}
+
+@layer components {
+  .header-link {
+    @apply cursor-pointer text-sm font-medium text-gray-50 transition duration-200
+    hover:text-gray-400;
+  }
+  .header-icon {
+    @apply cursor-pointer text-gray-50;
+  }
+  .header-default-bg-color-dark {
+    @apply bg-gradient-to-b from-[#141414];
+  }
+  .bg-color-dark {
+    @apply bg-[#141414];
+  }
+}
