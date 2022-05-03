@@ -31,43 +31,37 @@ const Browse = ({
   }: Props) => {
   // console.log(netflixOriginals)
   return (
-    <div className="">
+    <div className="bg-gradient-to-t from-[#141414]  lg:h-[100vh]">
       <Head>
         <title>Home - Netflix</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main className="relative flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Browse Next.js!
-          </a>
-        </h1>
-        {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p> */}
-        {/* Banner */}
+      <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16">
         <Banner trendingNow={trendingNow}/>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+        {/* Banner */}
         <section>
           {/* Row */}
         </section>

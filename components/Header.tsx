@@ -25,8 +25,8 @@ const Header = () => {
         top-0 z-40
         w-full
         flex items-center justify-between
-        py-4 px-8 md:py-5 md:px-16
-        transition duration-700
+        py-4 px-8 md:py-4 md:px-16
+        transition duration-500
         ${isScrolled ? 'bg-color-dark' : 'header-default-bg-color-dark'}`}>
       <div className="flex items-center space-x-2 md:space-x-10">
         <img
