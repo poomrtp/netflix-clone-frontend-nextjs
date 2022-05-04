@@ -4,13 +4,13 @@
 
 @layer base {
   body {
-    @apply bg-[#141414];
+    @apply bg-[#141414] overflow-x-hidden;
   }
 }
 
 @layer components {
   .header-link {
-    @apply cursor-pointer text-sm font-medium text-gray-50 transition duration-200
+    @apply cursor-pointer text-sm font-medium text-gray-200 transition duration-200
     hover:text-gray-400;
   }
   .header-icon {

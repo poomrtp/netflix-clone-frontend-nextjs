@@ -7,6 +7,7 @@ import Banner from '../../components/Banner'
 
 import requests from '../../utils/movie.service'
 import { Movie } from '../../types/movie.type'
+import RowMovieList from '../../components/RowMovieList'
 
 interface Props {
   netflixOriginals: Movie[]
@@ -31,29 +32,16 @@ const Browse = ({
   }: Props) => {
   // console.log(netflixOriginals)
   return (
-    <div className="bg-gradient-to-t from-[#141414]  lg:h-[100vh]">
+    <div className="bg-gradient-to-t from-[#141414] h-[50vh]  lg:h-[100vh]">
       <Head>
         <title>Home - Netflix</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16">
-        <Banner trendingNow={trendingNow}/>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
+      <main className="relative pl-4 pb-24 space-y-16 lg:pl-16">
+        <Banner trendingNow={trendingNow} />
+        <RowMovieList title="Trainding Now" movies={trendingNow} />
+        <RowMovieList title="Top Rated" movies={topRated} />
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>

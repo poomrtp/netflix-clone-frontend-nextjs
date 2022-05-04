@@ -36,7 +36,7 @@ const Header = () => {
           className="cursor-pointer object-contain"
           alt="band-logo" />
         <ul className="hidden space-x-4 text-white md:flex">
-          <li className="header-link">Home</li>
+          <li className="header-link text-white">Home</li>
           <li className="header-link">TV Shows</li>
           <li className="header-link">Movies</li>
           <li className="header-link">New & Popular</li>
