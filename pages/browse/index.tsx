@@ -39,19 +39,18 @@ const Browse = ({
       </Head>
       <Header/>
       <main className="relative pl-4 pb-24 space-y-16 lg:pl-16">
-        <Banner trendingNow={trendingNow} />
-        <RowMovieList title="Trainding Now" movies={trendingNow} />
-        <RowMovieList title="Top Rated" movies={topRated} />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti suscipit numquam quos quo quibusdam quae assumenda aut repellat unde? Aliquid porro non earum. Aperiam eveniet consequatur cupiditate quas doloribus!</p>
         {/* Banner */}
-        <section>
+        <Banner trendingNow={trendingNow} />
+        <section className="space-y-12 md:space-y-24">
           {/* Row */}
+          <RowMovieList title="Trainding Now" movies={trendingNow} />
+          <RowMovieList title="Top Rated" movies={topRated} />
+          <RowMovieList title="Action Movies" movies={actionMovies} />
+          <RowMovieList title="Comedy Movies" movies={comedyMovies} />
+          <RowMovieList title="Horror Movies" movies={horrorMovies} />
+          <RowMovieList title="Romance Movie" movies={romanceMovies} />
+          <RowMovieList title="Netflix Originals" movies={netflixOriginals} />
+          <RowMovieList title="Documentaries" movies={documentaries} />
         </section>
       </main>
 

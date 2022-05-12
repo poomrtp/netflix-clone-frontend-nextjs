@@ -14,12 +14,11 @@ const Banner = ({ trendingNow }: Props) => {
     setMovie(trendingNow[Math.floor(Math.random() * trendingNow.length)])
   }, [trendingNow])
   const baseImageUrl = process.env.NEXT_PUBLIC_TMDB_BASE_IMAGE_URL
-  console.log(movie)
   return (
     <div className="flex flex-col space-y-2 pt-16 pb-2 lg:h-[80vh] lg:justify-end md:space-y-4">
       <div className="absolute top-0 left-0 h-[50vh] lg:h-[100vh] w-screen -z-20 ">
         <Image
-          src={`${process.env.NEXT_PUBLIC_TMDB_BASE_IMAGE_URL}${movie?.backdrop_path || movie?.poster_path}`}
+          src={`${baseImageUrl}${movie?.backdrop_path || movie?.poster_path}`}
           layout="fill"
           objectFit="cover"/>
       </div>
